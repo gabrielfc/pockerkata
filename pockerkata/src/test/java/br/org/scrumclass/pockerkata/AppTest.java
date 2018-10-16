@@ -10,37 +10,37 @@ import junit.framework.TestCase;
 public class AppTest extends TestCase
 {
     @Test
-    public void testeComAs() {
-    	String [] jogador1 = new String[] {"AD", "3D", "1D", "4D", "7D"};
-    	String [] jogador2 = new String[] {"5D", "3D", "1D", "4D", "7D"};
-    	assertTrue(Pocker.play(jogador1, jogador2) == 1);
+    public void testeComMaiorCarta() {
+    	String [] jogador1 = new String[] {"QD", "3D", "1D", "4D", "7D"};
+    	String [] jogador2 = new String[] {"KD", "3D", "1D", "4D", "7D"};
+    	assertTrue(Pocker.play(jogador1, jogador2) == 2);
     }
     
     @Test
     public void testeComPar() {
     	String [] jogador1 = new String[] {"AD", "3D", "1D", "4D", "7D"};
     	String [] jogador2 = new String[] {"5D", "3D", "1D", "4D", "7D"};
-    	assertTrue(Pocker.play(jogador1, jogador2) == 1);
+    	assertTrue(false);
     }
     
     @Test
     public void testeComDoisPares() {
     	String [] jogador1 = new String[] {"AD", "3D", "1D", "4D", "7D"};
     	String [] jogador2 = new String[] {"5D", "3D", "1D", "4D", "7D"};
-    	assertTrue(Pocker.play(jogador1, jogador2) == 1);
+    	assertTrue(false);
     }
     
     @Test
     public void testeComTrica() {
     	String [] jogador1 = new String[] {"AD", "3D", "1D", "4D", "7D"};
     	String [] jogador2 = new String[] {"5D", "3D", "1D", "4D", "7D"};
-    	assertTrue(Pocker.play(jogador1, jogador2) == 1);
+    	assertTrue(false);
     }
     
     @Test
     public void testeComSequencia() {
     	String [] jogador1 = new String[] {"AD", "3D", "1D", "4D", "7D"};
     	String [] jogador2 = new String[] {"5D", "3D", "1D", "4D", "7D"};
-    	assertTrue(Pocker.play(jogador1, jogador2) == 1);
+    	assertTrue(false);
     }
 }
